@@ -11,39 +11,52 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+/*backend folder */
+
+
+Route::get('/logon', function () {
+	return view('backend/logon');
 });
 
 Route::get('/dashboard', function () {
-	return view('dashboard');
-
+	return view('backend/dashboard');
 });
 
+
 Route::get('/myprofile', function () {
-    return view('myprofile');
+    return view('backend/myprofile');
 });
 
 Route::get('/mymail', function () {
-    return view('mymail');
+    return view('backend/mymail');
 });
 
 Route::get('/eoi', function () {
-    return view('eoi');
+    return view('backend/eoi');
 });
 
 Route::get('/intport', function () {
-    return view('intport');
+    return view('backend/intport');
 });
 
 
 Route::get('/changepass', function () {
-    return view('changepass');
+    return view('backend/changepass');
 });
 
 Route::get('/changepass2', function () {
     return view('changepass');
 });
+
+
+
+/*everything else */
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
 
 
 

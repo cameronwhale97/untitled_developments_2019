@@ -58,18 +58,3 @@
 #55 /projects/new_untitled_dev/server.php(21): require_once('/projects/new_u...')
 #56 {main}
 "} 
-[2019-04-25 04:36:27] local.ERROR: Command "key" is not defined.
-
-Did you mean this?
-    key:generate {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"key\" is not defined.
-
-Did you mean this?
-    key:generate at /projects/new_untitled_dev/vendor/symfony/console/Application.php:611)
-[stacktrace]
-#0 /projects/new_untitled_dev/vendor/symfony/console/Application.php(224): Symfony\\Component\\Console\\Application->find('key')
-#1 /projects/new_untitled_dev/vendor/symfony/console/Application.php(143): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
-#2 /projects/new_untitled_dev/vendor/laravel/framework/src/Illuminate/Console/Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
-#3 /projects/new_untitled_dev/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
-#4 /projects/new_untitled_dev/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
-#5 {main}
-"} 

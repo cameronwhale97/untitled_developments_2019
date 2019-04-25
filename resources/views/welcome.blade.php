@@ -1,331 +1,157 @@
-  <!DOCTYPE html>
-<html lang="en">
+@section('content')
 
-  <head>
+<!DOCTYPE html>
+<html lang="en" class="os-win">
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16">
+<link rel="SHORTCUT ICON" href="img/favicon.ico">
+<title>Wintec Internship Portal</title>
 
-    <title>Boss Cuts Barbershop</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/creative.css" rel="stylesheet">
-
-  <!-- Start of Zendesk Chat Script
-      <script type="text/javascript">
-    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-    $.src="https://v2.zopim.com/?62poazrRxRGGOJGSzHHmegB20oSW0VwT";z.t=+new Date;$.
-    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-    </script>
-   End of Zendesk Chat Script-->
-
- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="e34875dc-8376-4011-907e-52257e9d5ff1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/bosscuts.png"  height="32" width="32">&nbsp; Boss Cuts Barbershop</a>
-
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-
-          <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="login.html"><i class="fas fa-lock"></i>&nbsp;Login</a>
-          </li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Welcome to Boss Cuts</strong>
-            </h1>
-            <h5>
-              <strong>Waikato's #1 Barbershop for Men</strong>
-            </h5>
-            <hr>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Our Services</a>
+<!-- Leave these scripts alone! -->
+<script type="text/javascript" src="https://static.licdn.com/scds/concat/common/js?h=3nuvxgwg15rbghxm1gpzfbya2-35e6ug1j754avohmn1bzmucat-mv3v66b8q0h1hvgvd3yfjv5f-14k913qahq3mh0ac0lh0twk9v-32xqc0bz5w6d3bouth6hj9ozu-b7ksroocq54owoz2fawjb292y-62og8s54488owngg0s7escdit-c8ha6zrgpgcni7poa5ctye7il-8gz32kphtrjyfula3jpu9q6wl-51dv6schthjydhvcv6rxvospp-e9rsfv7b5gx0bk0tln31dx3sq-2r5gveucqe4lsolc3n0oljsn1-8v2hz0euzy8m1tk5d6tfrn6j-3eh5zbf8m3976frnzqqz8r2md-1l6r5aklcrehj1n7wy2v08xoy-8zc7dy7k0uqxxso1zmcx40mxo-a7br995b5xb4ztral63cjods4-rftdnvfzuncra9644jbr38ht-8s85e76fq22lk42rfavbckpvb-39kuwv80yvqr74w4oe9bge0md-ejfdcbibyn0amjrpy1bw898cw-2ktfa1kftfo63s0zzwtqt9mf0-b0otj9zjsih2zu4s3gxjejik2-czstax4e6y68hymdvqxpwe5so-3g8gynfr7fip2svw23i5ixnw3"></script>
+<script type="text/javascript" src="https://static.licdn.com/scds/concat/common/js?h=25kaepc6rgo1820ap1rglmzr4-c19zsujfl1pg46iqy33ubhqc5-8dsj0i05aa9so2un8dmci2gmx-ascppxxu6dqpt5sppka77kdt0-39o2kw4renyd4i8pt5n9x0qaz-9cttgd1ueltkur8cb164nt1vt-35b6d44bfxo2cvy5hbzc0zsgl-amjylk8w8039f2lwlov2e4nmc-47qp7uw3i5i1pqeovirlcc070-3qsk2peor188gw7gmh2irlhe5-78bwuml1uwwm9yb9sr3bw68qb-9xms7fd8xdfrly2skx89dmkyc-9undj1hjru2i7vjjlqtb52ho2-7vr4nuab43rzvy2pgq7yvvxjk"></script>
+<link rel="stylesheet" type="text/css" href="https://static.licdn.com/scds/concat/common/css?h=cfsam81o5sp3cxb7m0hs933c4-9ggkv94hyv0l10e52p9dsrys6-4ncd0u6vg12e6jlww2oj1uzws-2qk68hrxrqya74okuimf9dv0c">
+</head>
 
 
 
-
-              <script>
-              function myFunction() {
-                  alert("In house or 3rd party booking system opens here");
-              }
-              </script>
-
-
-&nbsp;
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#" onclick="myFunction()"><i class="far fa-calendar-alt" style="size:20px;"></i>&nbsp;Book an Appointment<span class="glyphicon glyphicon-calendar"></span></a>
-          </div>
-
-        </div>
-      </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We are Boss Cuts</h2>
-            <h5 class="text-white">Waikato's #1 Barbershop for Men.
-            Catering to men of all ages, we have the style for you.
-
-            We pride ourselves in the work that we do, and with our industry leading
-            standards and cerifications, we guarentee premium results.</h5>
-
-            <p class="text-faded mb-4"></p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Services we provide</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bump" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <style>
-            .bump{
-              position:relative;
-              margin-top:-400px;
+    <style>
+        body {
+              background-color:  #00a1f1;
+              background-size: cover;
+              background-repeat: no-repeat;  
             }
+        }
+    </style>
 
-            #down{
-              position: relative;
-              margin-top:350px;
-            }
-            </style>
+<body  id="random" onload="randombg()">
 
-            <h2 id="down" class="section-heading">Our Services</h2>
-            <hr id="down" style="margin-top:200px;" class="my-4">
-          </div>
-        </div>
-      </div>
-      <div id="bump" class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-cut text-primary mb-3 sr-icon-1"></i>
-              <h3 style="font-size: 30px;" class="mb-3">Mens Style Cuts</h3>
-              <p class="text-muted mb-0">We offer a wide range of style cuts, all to suit your needs.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-shopping-cart text-primary mb-3 sr-icon-2"></i>
-              <h3 style="font-size: 25px;" class="mb-3">Quality Hair Products</h3>
-              <p class="text-muted mb-0">We use the best haircare products for our clients.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-smile text-primary mb-3 sr-icon-3"></i>
-              <h3 style="font-size: 25px;" class="mb-3">Professional Customer Service</h3>
-              <p class="text-muted mb-0">Our Professionally Trained staff, are trained to provide
-              the best customer service first time, everytime.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fas fa-4x fa-door-open text-primary mb-3 sr-icon-4"></i>
-              <h3 class="mb-3">Walk Ins Welcome</h3>
-              <p class="text-muted mb-0">Got very little time in your day to make an appointment? Walk Ins are
-              most definitely welcome.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<script>
+		    function randombg(){
+		  var random= Math.floor(Math.random() * 9) + 0;
+		  var bigSize = ["url('img/hmeimgss/1.jpg')",
+		                 "url('img/hmeimgss/2.jpg')",
+		                 "url('img/hmeimgss/3.jpg')",
+		                 "url('img/hmeimgss/4.jpg')",
+		                 "url('img/hmeimgss/5.jpg')",
+		                 "url('img/hmeimgss/6.jpg')",
+		                 "url('img/hmeimgss/7.jpg')",
+		                 "url('img/hmeimgss/8.jpg')",
+		                 "url('img/hmeimgss/9.jpg')"];
 
-    <section style="background-color:#58636d;"id="gallery">
 
-      <center>
-        <h2 style="color:white" class="section-heading">Gallery</h2>
-      </center>
-
-      <hr style="margin-top:200px;" class="my-4">
-
-      <div class="container-fluid p-0">
-              <div class="row no-gutters popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                  <a class="portfolio-box" href="img/customers/6.jpg">
-                    <img class="img-fluid" src="img/customers/thumbnail/6.jpg" alt="">
-
-                  </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <a class="portfolio-box" href="img/customers/3.jpg">
-                    <img class="img-fluid" src="img/customers/thumbnail/3.jpg" alt="">
-
-                  </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                  <a class="portfolio-box" href="img/customers/1.jpg">
-                    <img class="img-fluid" src="img/customers/thumbnail/1.jpg" alt="">
-                    </div>
-                  </a>
-                </div>
+		  document.getElementById("random").style.backgroundImage=bigSize[random];
+		}
+		</script>
 
 
 
-              </div>
-            </div>
-    </section>
-
-
-
-    <section id="contact">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="my-4">
-            <p class="mb-5">Get in touch with us via our contact details, and we'll get
-            back to you as soon as possible.  </p>
-          </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col-sm-3 ml-auto">
-
-            <div style="width: 640px">
-              <iframe width="300" height="320" src="https://maps.google.com/maps?width=640&amp;height=480&amp;hl=en&amp;q=174%20Clarkin%20Rd%2C%20Fairfield%2C%20Hamilton%203214+(Boss%20Cuts%20Barbershop)&amp;ie=UTF8&amp;t=h&amp;z=17&amp;iwloc=A&amp;output=embed"
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-              </iframe>
-            </div>
-            <!-- <i class="fab fa-google fa-3x mb-3 sr-contact-1"></i> -->
-          </div>
-
-          <div class="col-sm-3 ml-auto text-center">
-
-
-            <a style="color:black;" href="https://www.facebook.com/bosscutsnz/">
-              <i class="fab fa-facebook fa-2x"></i>
-                &nbsp;Facebook
-            </a>
-
-            <br>
-            <br>
-
-
-            <a style="color:black;" href="mailto:hello@bosscuts.co.nz">
-              <i class="fas fa-envelope fa-2x"></i>
-                Email
-              </a>
-
-            <br>
-            <br>
-
-            <a style="color:black;" href="#">
-              <i class="fab fa-twitter fa-2x"></i>
-              Twitter
-            </a>
-
-              <br>
-              <br>
-
-            <a style="color:black;" href="#">
-              <i class="fab fa-instagram fa-2x"></i>
-              Instagram
-            </a>
-
-
-
-
-          </div>
-
-          <div class="col-lg-3 ml-auto text-center">
-            <!-- <i class="fas fa-clock fa-3x mb-3 sr-contact-1"></i> -->
-            <p>Store Hours</p>
-            <b>Monday</b> - Closed<br>
-            <b>Tuesday</b> - 9AM to 5PM<br>
-            <b>Wednesday</b> - 9AM to 5PM<br>
-            <b>Thursday</b> - 9AM to 6PM<br>
-            <b>Friday</b> - 9AM to 5PM<br>
-            <b>Saturday</b> - 8:30AM - 4PM<br>
-            <b>Sunday</b> - Closed
-
-
-          </div>
+	<input id="inSlowConfig" type="hidden" value="false"/>
+	<script type="text/javascript">document.body.className+=" js ";</script>
+	<script type="text/javascript">fs._server.fire("a3f3ff1a1f8c921340407b43db2a0000-2",{event:"before",type:"html"});</script>
 
 
 
 
 
-          <div class="col-lg-3 ml-auto text-center">
-            <!-- <i class="fas fa-clock fa-3x mb-3 sr-contact-1"></i> -->
-            <p>Contact Information</p>
-            <b>Email</b> - hello@bosscuts.co.nz<br>
-            <b>Phone</b> - 0800 Boss Cuts<br><br>
-            <b>Postal</b><br>174 Clarkin Road<br>Fairfield<br>Hamilton 3204
+		
+		<div id="main" class="signin">
+    	<form class="ajax-form stacked-form" method="POST" name="login" id="login" action="{{route('login')}} ">
 
-          </div>
-        </div>
-      </div>
-    </section>
+			{{ csrf_field() }}
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+			<fieldset>
+			<div class="outer-wrapper">
+			<div class="inner-wrapper" style="background-color: #FFDD00;">
+			                		 <img src="img/wintec black.png" style="width:390px;height:85px">
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    		 <div style="margin-top: 20px;">
+    		 	<h1 style="font-size:30px;">Wintec Internship Portal</h1>
+	    		 <div style="margin-top:10px;"></div>
+    		 	<h1 style="font-size:15px;font-weight: bold;">Please login with your wintec.ac.nz account</h1>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+                <div style="margin-top:10px;" class="panel-body">
+                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                        {{ csrf_field() }}
 
-  </body>
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
+
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+
+                        <div style="margin-top:10px;" class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-4 control-label">Password</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                       <div style="margin-top:10px;" class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div style="margin-top:10px;" class="form-group">
+                            <div class="col-md-8 col-md-offset-4">
+                            	<ul>
+                            	<li class="button">	
+                                		<button type="submit" class="btn btn-primary">
+                                    		Login
+                                		</button>
+                        		</li>
+                        	</ul>
+
+                                <a class="btn btn-link" href="{{ route('register')}}">
+                                    Register
+                                </a><br/>
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    Forgot Your Password?
+                                </a>
+                            </div>
+                        </div>
+
+    		 </div>
+
+
+
+		</div>
+	</div>
+</fieldset>
+</form>
+</div>
+</body>
+<!-- Leave these scripts alone! -->
+<script type="text/javascript">LI.Controls.processQueue();</script>
+<script type="text/javascript">LI_WCT(["control-http-12157-58149-1","control-http-12157-58149-2","control-http-12157-58150-3","control-http-12157-58150-4","control-http-12157-58150-5",]);</script>
+<script type="text/javascript">fs._server.fire("a3f3ff1a1f8c921340407b43db2a0000-3",{event:"before",type:"html"});</script>
 </html>
+
+
+			
+
+
+					

@@ -1,0 +1,33 @@
+[18-Apr-2018 14:12:58 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[18-Apr-2018 14:12:58 UTC] PHP Stack trace:
+[18-Apr-2018 14:12:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[18-Apr-2018 14:12:58 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:24
+[18-Apr-2018 14:12:58 UTC] PHP   3. ComposerAutoloaderIniteb9af53dd4fee6bd57d6f05d7ba2124a::getLoader() /home/ubuntu/workspace/vendor/autoload.php:7
+[18-Apr-2018 14:12:58 UTC] PHP   4. composerRequireeb9af53dd4fee6bd57d6f05d7ba2124a() /home/ubuntu/workspace/vendor/composer/autoload_real.php:56
+[18-Apr-2018 14:17:56 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[18-Apr-2018 14:17:56 UTC] PHP Stack trace:
+[18-Apr-2018 14:17:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[18-Apr-2018 14:17:56 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:24
+[18-Apr-2018 14:17:56 UTC] PHP   3. ComposerAutoloaderIniteb9af53dd4fee6bd57d6f05d7ba2124a::getLoader() /home/ubuntu/workspace/vendor/autoload.php:7
+[18-Apr-2018 14:17:56 UTC] PHP   4. composerRequireeb9af53dd4fee6bd57d6f05d7ba2124a() /home/ubuntu/workspace/vendor/composer/autoload_real.php:56
+[18-Apr-2018 14:20:36 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[18-Apr-2018 14:20:36 UTC] PHP Stack trace:
+[18-Apr-2018 14:20:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[18-Apr-2018 14:20:36 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:24
+[18-Apr-2018 14:20:36 UTC] PHP   3. ComposerAutoloaderIniteb9af53dd4fee6bd57d6f05d7ba2124a::getLoader() /home/ubuntu/workspace/vendor/autoload.php:7
+[18-Apr-2018 14:20:36 UTC] PHP   4. composerRequireeb9af53dd4fee6bd57d6f05d7ba2124a() /home/ubuntu/workspace/vendor/composer/autoload_real.php:56
+[18-Apr-2018 14:22:31 UTC] PHP Parse error:  syntax error, unexpected '?' in /home/ubuntu/workspace/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 233
+[18-Apr-2018 14:22:31 UTC] PHP Stack trace:
+[18-Apr-2018 14:22:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/public/index.php:0
+[18-Apr-2018 14:22:31 UTC] PHP   2. require() /home/ubuntu/workspace/public/index.php:24
+[18-Apr-2018 14:22:31 UTC] PHP   3. ComposerAutoloaderIniteb9af53dd4fee6bd57d6f05d7ba2124a::getLoader() /home/ubuntu/workspace/vendor/autoload.php:7
+[18-Apr-2018 14:22:31 UTC] PHP   4. composerRequireeb9af53dd4fee6bd57d6f05d7ba2124a() /home/ubuntu/workspace/vendor/composer/autoload_real.php:56
+[03-May-2018 10:20:01 UTC] PHP Fatal error:  Cannot declare class App\User, because the name is already in use in /home/ubuntu/workspace/app/Account.php on line 8
+[03-May-2018 11:08:30 UTC] PHP Fatal error:  Cannot declare class App\User, because the name is already in use in /home/ubuntu/workspace/app/Account.php on line 8
+[05-May-2018 01:49:31 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Auth\RegisterController::create() in /home/ubuntu/workspace/app/Http/Controllers/Auth/RegisterController.php on line 73
+[05-May-2018 01:49:31 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Auth\RegisterController::create() in /home/ubuntu/workspace/app/Http/Controllers/Auth/RegisterController.php on line 73
+[05-May-2018 01:49:46 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Auth\RegisterController::create() in /home/ubuntu/workspace/app/Http/Controllers/Auth/RegisterController.php on line 73
+[07-May-2018 03:31:15 UTC] PHP Fatal error:  Trait 'App\Traits\HasCompositePrimaryKey' not found in /home/ubuntu/workspace/app/AccountSubject.php on line 9
+[07-May-2018 03:47:33 UTC] PHP Fatal error:  Class 'App\Eloquent' not found in /home/ubuntu/workspace/app/AccountSubject.php on line 7
+[07-May-2018 03:47:47 UTC] PHP Fatal error:  Class 'Illuminate\Database\Eloquent' not found in /home/ubuntu/workspace/app/AccountSubject.php on line 7
+[07-May-2018 03:56:11 UTC] PHP Fatal error:  Trait 'App\App\Traits\HasCompositePrimaryKey' not found in /home/ubuntu/workspace/app/AccountSubject.php on line 10

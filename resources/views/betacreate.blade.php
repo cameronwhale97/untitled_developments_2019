@@ -29,6 +29,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.css" rel="stylesheet">
+    
+    
 
 
   </head>
@@ -38,7 +40,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/bosscuts.png"  height="32" width="32">&nbsp; Boss Cuts Barbershop</a>
+
+        <a class="navbar-brand js-scroll-trigger" href="{{url('/')}}"><img src="img/bosscuts.png"  height="32" width="32">&nbsp; Boss Cuts Barbershop</a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,7 +52,7 @@
 
 
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#"><i class="fas fa-lock"></i>&nbsp;Login</a>
+              <a class="nav-link js-scroll-trigger" href="{{url('/logon')}}"><i class="fas fa-lock"></i>&nbsp;Login</a>
           </li>
 
           </ul>
@@ -58,53 +61,10 @@
     </nav>
 
     <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
 
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h4 class="text-uppercase">
-              <strong>Admin Login</strong>
-            </h4>
-          </div>
-        </div>
-
-        <br>
-        <br>
-
-        <div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-            <form class="form-signin">
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-              </div>
-
-              <br>
-
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-              </div>
-              <br>
-              <button onclick="location.href = 'dashboard.html';" class="btn btn-lg btn-primary btn-block text-uppercase" type="button" >Sign In</button>
-
-
-            </form>
-      </div>
-    </div>
-  </div>
-        <br>
-        <br>
-        <br>
-        <div class="alert alert-warning" role="alert">
-          <style>
-          h13{
-            font-family:'Arial', sans-serif;
-          }
-          </style>
-          <h13><b>Notice</b>&nbsp;This login portal is for staff from Boss Cuts Barbershop to manage bookings and clients. <br> If you're not staff, <b><a href="index.html">click me</b></a> to be taken back home.</h13>
-        </div>
-      </div>
-    </header>
+      
+      
+      
 
 
 

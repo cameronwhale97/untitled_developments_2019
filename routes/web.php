@@ -12,15 +12,56 @@
 */
 
 
+/*bookings?*/
+Route::get('book', 'BookingsController@create'); //to add route to “create new post form”
+Route::post('book/store', 'BookingsController@store');	 //to add route to store method
+
+
+
+
+/*bookings - backend*/
+
+
+
+
+
+
+
+
+
 /*backend folder */
-
-
 Route::get('/logon', function () {
 	return view('backend/logon');
 });
 
+
+Route::group( ['middleware' => 'auth.custom' ], function()
+{
+
+    
 Route::get('/dashboard', function () {
 	return view('backend/dashboard');
+});
+
+
+
+Route::get('/bookings', function () {
+    return view('backend/bookings');
+});
+
+
+
+Route::get('/bookings', function () {
+    $name='Deep'; 
+	return view('backend.bookings', compact('name'));
+});
+
+Route::get('/bookings', function () {
+    $bk=DB::table('bookings')->get();
+	return view('backend.bookings', compact('bk'));
+});
+
+
 });
 
 
@@ -51,10 +92,23 @@ Route::get('/changepass2', function () {
 
 
 
+
+
+
 /*everything else */
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/book', function () {
+    return view('create');
+});
+
+Route::get('/betabook', function () {
+    return view('betacreate');
+});
+
+
 
 
 

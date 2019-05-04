@@ -83,6 +83,7 @@
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
               <strong>Welcome to Boss Cuts</strong>
+
             </h1>
             <h5>
               <strong>Waikato's #1 Barbershop for Men</strong>
@@ -95,15 +96,10 @@
 
 
 
-              <script>
-              function myFunction() {
-                  alert("In house or 3rd party booking system opens here");
-              }
-              </script>
-
+             
 
 &nbsp;
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#" onclick="myFunction()"><i class="far fa-calendar-alt" style="size:20px;"></i>&nbsp;Book an Appointment<span class="glyphicon glyphicon-calendar"></span></a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="<?php echo e(url('/book')); ?>" onclick="myFunction()"><i class="far fa-calendar-alt" style="size:20px;"></i>&nbsp;Book an Appointment<span class="glyphicon glyphicon-calendar"></span></a>
           </div>
 
         </div>

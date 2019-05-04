@@ -39,7 +39,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
 
-        <a class="navbar-brand js-scroll-trigger" href="<?php echo e(url('/')); ?>"><img src="img/bosscuts.png"  height="32" width="32">&nbsp; Boss Cuts Barbershop</a>
+        <a class="navbar-brand js-scroll-trigger" href="{{url('/')}}"><img src="img/bosscuts.png"  height="32" width="32">&nbsp; Boss Cuts Barbershop</a>
 
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
 
 
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?php echo e(url('/logon')); ?>"><i class="fas fa-lock"></i>&nbsp;Login</a>
+              <a class="nav-link js-scroll-trigger" href="{{url('/logon')}}"><i class="fas fa-lock"></i>&nbsp;Login</a>
           </li>
 
           </ul>
@@ -69,10 +69,9 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
       
 <div id="main" class="signin">
-    	<form class="ajax-form stacked-form" method="POST" name="login" id="login" action="<?php echo e(route('login')); ?> ">
+    	<form class="ajax-form stacked-form" method="POST" name="login" id="login" action="{{route('login')}} ">
 
-			<?php echo e(csrf_field()); ?>
-
+			{{ csrf_field() }}
 
 			<fieldset>
 			<div class="outer-wrapper">
@@ -87,33 +86,32 @@
     		 	<br>
 
                 <div style="margin-top:10px;" class="panel-body">
-                    <form class="form-horizontal" method="POST" action="<?php echo e(route('login')); ?>">
-                        <?php echo e(csrf_field()); ?>
+                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+                        {{ csrf_field() }}
 
-
-                        <div class="form-group<?php echo e($errors->has('email') ? ' has-error' : ''); ?>">
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
 
                             <div class="col-md-12">
-                                <input id="email" placeholder="Email Address" type="email" class="form-control" name="email" value="<?php echo e(old('email')); ?>" required autofocus>
+                                <input id="email" placeholder="Email Address" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
-                                <?php if($errors->has('email')): ?>
+                                @if ($errors->has('email'))
                                     <span class="help-block">
-                                        <strong><?php echo e($errors->first('email')); ?></strong>
+                                        <strong>{{ $errors->first('email') }}</strong>
                                     </span>
-                                <?php endif; ?>
+                                @endif
                             </div>
                         </div>
         <br>
 
-                        <div style="margin-top:10px;" class="form-group<?php echo e($errors->has('password') ? ' has-error' : ''); ?>">
+                        <div style="margin-top:10px;" class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <div class="col-md-12">
                                 <input id="password" placeholder="Password" type="password" class="form-control" name="password" required>
 
-                                <?php if($errors->has('password')): ?>
+                                @if ($errors->has('password'))
                                     <span class="help-block">
-                                        <strong><?php echo e($errors->first('password')); ?></strong>
+                                        <strong>{{ $errors->first('password') }}</strong>
                                     </span>
-                                <?php endif; ?>
+                                @endif
                             </div>
                         </div>
 
@@ -121,7 +119,7 @@
                             <div style="margin-left:20px;" class="col-md-10">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" <?php echo e(old('remember') ? 'checked' : ''); ?>> Remember Me
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
                                     </label>
                                 </div>
                             </div>
@@ -141,17 +139,17 @@
                             }
                         </style>
     		 	<div class="alert alert-warning" role="alert">
-                    <h1 style="font-size:15px;"><strong>Notice:</strong> This login is for employees from Boss Cuts Barbershop<br><br>If you came here by mistake, click <a href="<?php echo e(url('/')); ?>">here</a> to go back home</h1>
+                    <h1 style="font-size:15px;"><strong>Notice:</strong> This login is for employees from Boss Cuts Barbershop<br><br>If you came here by mistake, click <a href="{{url('/')}}">here</a> to go back home</h1>
 
     		 	</div>
 
                         	
 
                             <!--
-                                <a class="btn btn-link" href="<?php echo e(route('register')); ?>">
+                                <a class="btn btn-link" href="{{ route('register')}}">
                                     Register
                                 </a><br/>
-                                <a class="btn btn-link" href="<?php echo e(route('password.request')); ?>">
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
                                 </a> -->
                             </div>

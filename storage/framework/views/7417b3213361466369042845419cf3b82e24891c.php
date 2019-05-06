@@ -21,7 +21,35 @@
 </head>
 
 <body id="page-top">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+
+    <!-- Include this after the sweet alert js file -->
+    <?php echo $__env->make('sweet::alert', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    
+    						<?php if(session()->has('alert')): ?>
+						
+						         
+                    						  
+                            <script> //sweet alerts
+                            
+                            var content = document.createElement('div');
+                                      content.innerHTML = '<strong> Booking Successful'+ '\n' + 'Check your email for more information </strong>';
+                            swal({
+                           title: "Booking Successful",
+                           content:content,
+                           //text: "Booking Successful" + "\n" +"Check your email for more information",
+                           icon: "success",
+                            });
+                        </script>
+                        
+                        <audio  autoplay>
+                                  <source src="audio/applepay.mp3" type="audio/mp3" >
+                        </audio>
+        
+        
+                            
+                        <?php endif; ?>
   <!-- Page Wrapper -->
   <div id="wrapper">
 
@@ -29,7 +57,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo e(url('/dashboard')); ?>">
         <div class="sidebar-brand-icon">
           <img src="img/bosscuts.png" width="32" height="32">
         </div>
@@ -41,7 +69,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="<?php echo e(url('/dashboard')); ?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -78,19 +106,21 @@
       <!-- Nav Item - Utilities Collapse Menu -->   
      <li class="nav-item">
      
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link collapsed" href="#" data-toggle="modal" data-target="#bookingsModal" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-plus"></i>
           <span>Add New Booking</span>
         </a>
+        
      
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseX" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-book"></i>
           <span>Management</span>
+          
         </a>
         
         <div id="collapseX" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="#">View Bookings</a>
+            <a class="collapse-item" href="<?php echo e(url('/bookings')); ?>">View Bookings</a>
             <a class="collapse-item" href="#">Generate Report</a>
           </div>
         </div>
@@ -101,33 +131,6 @@
       <!-- Divider -->
       <hr class="sidebar-divider">
      
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Additional Tools
-      </div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
-          <i class="fas fa-fw fa-cog"></i>
-          <span>Pages</span>
-        </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Login Screens:</h6>
-            <a class="collapse-item" href="login.html">Login</a>
-            <a class="collapse-item" href="register.html">Register</a>
-            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
-            <div class="collapse-divider"></div>
-            <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item" href="blank.html">Blank Page</a>
-          </div>
-        </div>
-      </li>
-      <!-- Divider -->
-       
-      <hr class="sidebar-divider d-none d-md-block">
       
  
 
@@ -226,6 +229,168 @@
             <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
             </a>
             
+                          <!-- Bookings Modal -->
+        <div id="bookingsModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+              <h4 class="modal-title">Create New Booking</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+                						<form method="POST" action="/book/store" accept-charset="UTF-8" enctype="multipart/form-data">
+						
+						<?php echo e(csrf_field()); ?>
+
+
+							<div class="row">
+								<div class="col-sm-12"> 
+									<div class="form-group">
+										<span class="form-label">Name</span>
+										<input name="clientname" class="form-control" type="text" placeholder="Enter your name">
+									</div>
+								</div>
+															
+							</div>
+							<div class="form-group">
+								<span class="form-label">Phone</span>
+								<input name="clientphone" class="form-control" type="tel" placeholder="Enter your phone number">
+							</div>
+							
+                            
+    							<div class="form-group">
+    								<span class="form-label">Email</span>
+    								<input name="clientemail" class="form-control" type="text" placeholder="Enter your email">
+    							</div>
+
+
+<!-- break -->
+								
+							
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Service</span>
+												<select name="chosenservice" class="form-control">
+													<option>Service 1</option>
+													<option>Service 2</option>
+													<option>Service 3</option>
+													<option>Combo 1</option>
+													<option>Combo 2</option>
+													<option>Combo 3</option>
+													
+												</select>
+												<span class="select-arrow"></span>
+									</div>
+									
+									
+								</div>
+								
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<span class="form-label">Staff Member</span>
+												<select name="staffmember" class="form-control">
+													<option>Staff Member 1</option>
+													<option>Staff Member 2</option>
+													<option>Staff Member 3</option>
+												</select>
+												<span class="select-arrow"></span>
+											</div>
+										</div>
+										
+		
+									</div>
+								</div>
+								
+								
+								
+								
+							</div>
+							
+							<!-- break -->
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<span class="form-label">Date</span>
+												  <input name="chosendate" type="date" class="form-control">
+											</div>
+										</div>
+										
+		
+									</div>
+								</div>
+								
+								
+								
+								<div class="col-sm-6">
+									<div class="form-group">
+										<span class="form-label">Time</span>
+												<select name="chosentime" class="form-control">
+													<option selected="true" disabled="disabled">AM Times</option>
+                                                    <option>09:00</option>
+                                                    <option>09:30</option>
+                                                    
+                                                    <option>10:00</option>
+                                                    <option>10:30</option>
+                                                    
+                                                    <option>11:00</option>
+                                                    <option>11:30</option>
+                                                    
+													<option disabled="disabled">PM Times</option>
+													
+                                                    <option>12:00</option>
+                                                    <option>12:30</option>
+                                                    
+                                                    <option>13:00</option>
+                                                    <option>13:30</option>
+                                                    
+                                                    <option>14:00</option>
+                                                    <option>14:30</option>
+                                                    
+                                                    <option>15:00</option>
+                                                    <option>15:30</option>
+                                                    
+                                                    <option>16:00</option>
+                                                    
+													<option disabled="disabled">Last time of the day</option>
+                                                    <option>16:30</option>
+
+
+	
+													
+												</select>
+												<span class="select-arrow"></span>
+									</div>
+								</div>
+								
+							</div>
+							
+							
+							<!-- break -->
+							
+							<div class="form-btn">
+								<button class="submit-btn">Book Now</button>
+							</div>
+						</form>
+              </div>
+              
+              
+            
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+        
+          </div>
+        </div>
             
             <!-- Modal -->
         <div id="myModal" class="modal fade" role="dialog">
@@ -262,8 +427,11 @@
                     <tr>
                       <th>Client Name</th>
                       <th>Client Email</th>
-                      <th>Client Number</th>
+                      <th>Client Phone Number</th>
+                      <th>Chosen Service</th>
                       <th>Staff Member</th>
+                      <th>Chosen Date</th>
+                      <th>Chosen Time</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -272,7 +440,10 @@
         				<td><?php echo e($post->clientname); ?></td>
         				<td><?php echo e($post->clientemail); ?></td>
         				<td><?php echo e($post->clientphone); ?></td>
+        				<td><?php echo e($post->chosenservice); ?></td>
         				<td><?php echo e($post->staffmember); ?></td>
+        				<td><?php echo e($post->chosendate); ?></td>
+        				<td><?php echo e($post->chosentime); ?></td>
         				</tr>
 				<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                    </tbody>

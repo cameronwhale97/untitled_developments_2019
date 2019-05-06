@@ -9,7 +9,7 @@ class BookingsController extends Model
         protected $table = 'bookings';
         
         
-            protected $fillable = ['clientname','clientphone','clientemail','chosendate'];
+            protected $fillable = ['clientname','clientphone','clientemail'];
 
 
 

@@ -16,18 +16,12 @@
 Route::get('book', 'BookingsController@create'); //to add route to “create new post form”
 Route::post('book/store', 'BookingsController@store');	 //to add route to store method
 
+/*bookings modal from backend*/
+Route::post('book/store', 'BookingsControllerModal@store');	 //to add route to store method
 
 
 
 /*bookings - backend*/
-
-
-
-
-
-
-
-
 
 /*backend folder */
 Route::get('/logon', function () {

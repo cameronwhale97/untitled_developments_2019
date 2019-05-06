@@ -18,8 +18,12 @@ class CreateBookingsTable extends Migration
                     $table->increments('id');
                     $table->string('clientname');
                     $table->string('clientemail');
-                    $table->integer('clientphone');
+                    $table->string('clientphone');
+                    $table->string('chosenservice');
                     $table->string('staffmember');
+                    $table->string('chosendate');
+                    $table->string('chosentime');
+
                     $table->timestamps();
                 });
     }

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+
 use App\Http\Requests;
 use App\User;
 
@@ -14,15 +16,12 @@ use Illuminate\Support\Facades\Redirect;
 use DB;
 use App\Http\Controllers\Controller;
 
-
-class BookingsController extends Controller
+class BookingsControllerModal extends Controller
 {
-
-
-public function store(Request $request)
+    public function store(Request $request)
     {
         // create a new user object
-        $booking           = new \App\BookingsController;
+       $booking           = new \App\BookingsController;
 
         $booking->clientname     = $request->input('clientname');
         $booking->clientemail    = $request->input('clientemail');
@@ -42,10 +41,7 @@ public function store(Request $request)
         //return redirect('book')->with('success', 'Booking Successful\nCheck your email for more');
             
         $msg_success='Successfully added new booking!';
-        return redirect('book')->with('alert', $msg_success);
+        return Redirect::back()->with('alert', $msg_success);
 
     }
-
-
-    
 }
